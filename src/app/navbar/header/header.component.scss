@@ -1,0 +1,15 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+mat-toolbar{
+  background-color: slateblue;
+  span{
+    color: ghostwhite;
+  }
+  button{
+    background-color: darkslateblue;
+    mat-icon{
+      color: ghostwhite;
+    }
+  }
+}
