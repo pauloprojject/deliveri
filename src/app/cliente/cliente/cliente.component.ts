@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Cliente} from "../../../shared/model/cliente";
 
 @Component({
   selector: 'app-cliente',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClienteComponent implements OnInit {
 
-  constructor() { }
+  clientes: Array<Cliente> = new Array<Cliente>();
+  constructor() {
+    this.clientes.push({
+      nome: "Paulo",
+      cpf: "123",
+      idade: 35
+    })
+  }
 
   ngOnInit(): void {
+
   }
 
 }
